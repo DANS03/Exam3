@@ -7,15 +7,14 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v2
-
-    - name: Set up Node.js
+    - name: Traer Node
       uses: actions/setup-node@v3
       with:
         node-version: '14'
-
-    - name: Print information
+        
+        
+    - name: Print
+      
       run: |
         echo "David Abraham Naranjo Salgado"
         echo "Versión de Node.js: $(node -v)"
