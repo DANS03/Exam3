@@ -1,0 +1,22 @@
+name: Node Action
+
+on: [push, pull_request]
+
+jobs:
+  print-info:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '14'
+
+    - name: Print information
+      run: |
+        echo "Nombre Completo: TuNombreCompleto"
+        echo "Versión de Node.js: $(node -v)"
+        echo "Expediente: TuExpediente"
