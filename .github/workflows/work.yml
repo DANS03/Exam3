@@ -17,6 +17,6 @@ jobs:
 
     - name: Print information
       run: |
-        echo "Nombre Completo: TuNombreCompleto"
+        echo "David Abraham Naranjo SalgADO"
         echo "Versión de Node.js: $(node -v)"
-        echo "Expediente: TuExpediente"
+        echo "730697"
